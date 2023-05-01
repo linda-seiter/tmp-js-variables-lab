@@ -1,4 +1,5 @@
 //SOLUTION
+
 const dogs = 5;
 const jerky = 9;
 const cookies = 10;

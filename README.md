@@ -2,9 +2,9 @@
 
 ## Learning Goals
 
-- Declare a constant variable initialized with a numeric literal.
-- Declare a constant variable initialized with an arithmetic expression.
-- Output the value of a variable to the console.
+- Declare a constant initialized with a numeric literal.
+- Declare a constant initialized with an arithmetic expression.
+- Use console.log and string interpolation to output program state.
 
 ## Instructions
 

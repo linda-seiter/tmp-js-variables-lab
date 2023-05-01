@@ -2,24 +2,10 @@ SETUP:
 npm init -y
 npm install node
 
-RUN:
-node index.js
-
 TEST SETUP:
 npm install jest --save-dev
 npm install --save-dev babel-jest @babel/core @babel/preset-env
 npm install jest-matcher-one-of --save-dev
-
-
-"scripts": {
-    "test": "jest"
-  },
-"jest": {
-    "verbose": true
-}
-npm test
-
-
 
 For a lab, dependencies will already be in package.json:
 npm install 

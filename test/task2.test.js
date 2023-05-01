@@ -1,12 +1,11 @@
 const path = require("path");
 const babel = require("@babel/core");
 const helper = require("./helper.js");
-require("jest-matcher-one-of");
 
-const { apples, carrots } = require("../task2.js");
+const { apples, carrots } = require("../src/task2.js");
 
 const babelResult = babel.transformFileSync(
-  path.resolve(__dirname, "..", "task2.js")
+  path.resolve(__dirname, "../src/", "task2.js")
 );
 const code = babelResult.code;
 
@@ -45,7 +44,7 @@ describe("carrots", () => {
     expect(parseInt(assignment[1])).toBe(4);
   });
 
-  it("is multiplied by 3 using operator -*", () => {
+  it("is multiplied by 3 using operator *=", () => {
     const assignment = helper.getAssignment(code, "carrots", "\\*=");
     expect(assignment).not.toBeNull();
     expect(parseInt(assignment[1])).toBe(3);
